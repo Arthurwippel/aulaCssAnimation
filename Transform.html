@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--http://www.w3schools.com/css/css3_2dtransforms.asp -->
+<html>
+    <head>
+        <title>Btt</title>
+        <style> 
+            #exemplo1 {
+                
+                margin: 0 auto;
+                width: 200px;
+                height: 100px;
+                background-color: yellow;
+                transform: rotate(30deg);
+            }
+        </style>
+        <script>
+            var x = 0;
+            function teste() {
+                x += 10;
+                document.getElementById("exemplo1").style.transform = "rotate("+x+"deg)";
+                
+                requestAnimationFrame(teste);
+            }
+        </script>
+    </head>
+    <body onload="teste()">
+
+        <div id="exemplo1"></div>
+
+    </body>
+</html>
