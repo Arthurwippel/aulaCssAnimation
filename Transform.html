@@ -4,20 +4,77 @@
     <head>
         <title>Btt</title>
         <style> 
-            #exemplo1 {
-                
-                margin: 0 auto;
+            .estrutura {
+                   top: 50%;
+                left: 50%;
                 width: 200px;
                 height: 100px;
+                position: absolute;
+                
+            }
+            
+            
+             #exemplo1 {
+             
+                background-color: blueviolet;
+                transform: rotate(0deg);
+            }
+             #exemplo2 {
+             
+                background-color: blue;
+                transform: rotate(10deg);
+            }
+             #exemplo3 {
+             
                 background-color: yellow;
+                transform: rotate(20deg);
+            }
+             #exemplo4 {
+             
+                background-color: olive;
                 transform: rotate(30deg);
+            }
+             #exemplo5 {
+             
+                background-color: orangered;
+                transform: rotate(40deg);
+            }
+             #exemplo6 {
+             
+                background-color: pink;
+                transform: rotate(50deg);
+            }
+             #exemplo7 {
+             
+                background-color: violet;
+                transform: rotate(60deg);
             }
         </style>
         <script>
-            var x = 0;
+            var x1 =0;
+            var x2 =0;
+            var x3 =0;
+            var x4 =0;
+            var x5 =0;
+            var x6 =0;
+            var x7 =0;
+   
             function teste() {
-                x += 10;
-                document.getElementById("exemplo1").style.transform = "rotate("+x+"deg)";
+                x1 += 5;
+                x2 += 3;
+                x3 += 4,7;
+                x4 += 1,1;
+                x5 -= 2,9;
+                x6 -= 2,6;
+                x7 -= 1,7;
+               
+                document.getElementById("exemplo1").style.transform = "rotate("+x1+"deg)";
+                document.getElementById("exemplo2").style.transform = "rotate("+x2+"deg)";
+                document.getElementById("exemplo3").style.transform = "rotate("+x3+"deg)";
+                document.getElementById("exemplo4").style.transform = "rotate("+x4+"deg)";
+                document.getElementById("exemplo5").style.transform = "rotate("+x5+"deg)";
+                document.getElementById("exemplo6").style.transform = "rotate("+x6+"deg)";
+                document.getElementById("exemplo7").style.transform = "rotate("+x7+"deg)";
                 
                 requestAnimationFrame(teste);
             }
@@ -25,7 +82,13 @@
     </head>
     <body onload="teste()">
 
-        <div id="exemplo1"></div>
-
+        <div class="estrutura" id="exemplo1"></div>
+        <div class="estrutura" id="exemplo2"></div>
+        <div class="estrutura" id="exemplo3"></div>
+        <div class="estrutura" id="exemplo4"></div>
+        <div class="estrutura" id="exemplo5"></div>
+        <div class="estrutura" id="exemplo6"></div>
+        <div class="estrutura" id="exemplo7"></div>
+       
     </body>
 </html>
